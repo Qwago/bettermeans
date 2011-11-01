@@ -30,3 +30,4 @@ serverlog
 *.swo
 .rvmrc
 .redcar/
+.idea/
