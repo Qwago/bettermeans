@@ -1,4 +1,9 @@
-= BetterMeans
+
+
+= THIS FORK IS FOR A PRIVATE INSTALLATION OF BETTERMEANS.  Please go to https://github.com/bettermeans/bettermeans instead
+
+
+
 
 BetterMeans is giving birth to a new kind of company. An Open Enterprise.
 
@@ -9,7 +14,7 @@ More details can be found at http://bettermeans.com and here http://bettermeans.
 
 = Getting started
 
-git clone git@github.com:Bettermeans/bettermeans.git
+git clone git@github.com/Bettermeans/bettermeans.git
 
 #Rename database.yml.example to database.yml and set your local dev db u/p
 
