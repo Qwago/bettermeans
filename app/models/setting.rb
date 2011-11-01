@@ -9,8 +9,8 @@ class Setting < ActiveRecord::Base
 
   MAXIMUM_CONCURRENT_REQUESTS = 10 #Maximum issues same pereson can own at the same time per workstream
   
-  PAY_SCALES = {'Scale 1' => 100, 'Scale 2' => 50, 'Scale 3' => 20}
-  PAY_SCALES_DEFAULT = 100
+  PAY_SCALES = {'Scale 1' => 1, 'Scale 2' => 50, 'Scale 3' => 20}
+  PAY_SCALES_DEFAULT = 1
   
   DEFAULT_RETROSPECTIVE_LENGTH = 3 #Length in days for which a retrospective is open
   RETRO_CREDIT_THRESHOLD = 3000 # credit threshold for  retrospective to start. 
@@ -36,7 +36,7 @@ class Setting < ActiveRecord::Base
 
 
   #Factor by which dollars per point is multiplies e.g. a 5 point issue is worth $(POINT_FACTOR[5] * dpp)
-  POINT_FACTOR = [0.2,1,2,4,6,9,12]
+  POINT_FACTOR = [0,1,4,8,12,16,24]
   
   #Reverse lookup. Converts credits to points
   CREDITS_TO_POINTS = [0,1,2,3,3,4,4,4,5,5,5,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,9,10,10,10,10,10,11,11,11,11,11,11,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,18,18,19,19,19,19,19,19,19,19,19,19,20];
