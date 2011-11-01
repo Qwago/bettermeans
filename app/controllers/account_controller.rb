@@ -146,7 +146,9 @@ class AccountController < ApplicationController
   
   # User self-registration
   def register
-    redirect_to(home_url) && return unless Setting.self_registration? || session[:auth_source_registration]
+    redirect_to(home_url)
+=begin
+    && return unless Setting.self_registration? || session[:auth_source_registration]
     
     if params[:plan]# && params[:plan].is_a?(Numeric)
       @plan_id = Plan.find_by_code(params[:plan]).id 
@@ -204,6 +206,7 @@ class AccountController < ApplicationController
       end
     end
     render :layout => 'static'
+=end
   end
   
   # Token based account activation
